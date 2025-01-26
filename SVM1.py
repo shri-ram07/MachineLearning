@@ -48,7 +48,7 @@ plt.scatter(x2,y2 , color="red")
 #					Low value: simple/smooth hyperplane surface
 #					High value: all training examples classified correctly but complex surface
 #Model Selection
-model = svm.SVC(C=1000)
+model = svm.SVC(C=1)
 model.fit(train_x,train_y)
 
 #Prediction
