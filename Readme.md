@@ -1,6 +1,4 @@
-Here's the formatted version ready for direct copy-paste into an .md file:
 
-```markdown
 # Pandas Functions Reference Guide
 
 A comprehensive collection of Pandas functions with descriptions for data analysis and feature engineering.
