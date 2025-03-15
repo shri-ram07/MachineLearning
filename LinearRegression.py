@@ -7,8 +7,8 @@ import math
 
 
 # Read the house price csv file
-data = pd.read_csv("C:\ML\PythonMachineLearning\Datasets\Datasets\house_prices.csv")
-size = data['sqft_living15']
+data = pd.read_csv("Datasets\Datasets\house_prices.csv")
+size = data['sqft_living15'] #feature
 price = data['price']      # take usefull columns
 
 # machine learning handles arrays not data frames , hence convert it to array
@@ -22,7 +22,8 @@ model = LinearRegression()
 model.fit(x,y)    #used gradient descent
 #model.coef_   -> Intercept   and model.intercept_    -> Slope
 
-
+print(model.intercept_)
+print(model.coef_)
 #Evaluate the model using MSE
 mse = mean_squared_error(x,y)
 print("MSE : ",math.sqrt(mse))
